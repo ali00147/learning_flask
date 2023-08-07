@@ -1,20 +1,10 @@
-from flask import json
-from flask import request
-from flask import Flask
-
-app= Flask(__name__)
-
-@app.route("/")
-def apiroot():
-    return "welcome Maslah"
-
-@app.route("/github",methods=["POST"])
-def apigithub():
-    if request.headers["Content_Type"]=="application/json":
-        return json.dumps(request.json)
+class cat:
+    def __init__(self) -> None:
+    
+        pass
+    def catsays():
+        print("cat says Meow")
 
 
-if __name__=="__main__":
-    app.run(debug=False, port=50001)
-
-
+if __name__=="__Main__":
+    cat.catsays()
