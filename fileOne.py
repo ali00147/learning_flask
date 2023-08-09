@@ -2,9 +2,12 @@ class cat:
     def __init__(self) -> None:
     
         pass
-    def catsays():
-        print("cat says Meow")
+    def catsays(args):
+        print(args)
+        catsound= "meow"
+        print(catsound)
+        return args
 
 
-if __name__=="__Main__":
-    cat.catsays()
+if __name__=="__main__":
+    cat.catsays("heelo")
